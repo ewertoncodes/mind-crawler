@@ -6,13 +6,13 @@ gem 'rails', '~> 5.2.3'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'mongoid', '~> 6.1.0'
+gem 'jbuilder'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
-  gem 'shoulda-matchers', '~> 4.1'
+  gem 'mongoid-rspec'
   gem 'faker'
-  gem 'database_cleaner'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
