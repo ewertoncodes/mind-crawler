@@ -41,7 +41,7 @@ cp .env.sample .env
 Inicie o serviço do **MongoDB** rodando:
 
 ```bash
-sudo service mongod start
+sudo systemctl start mongodb
 ```
 Rode os testes:
 
