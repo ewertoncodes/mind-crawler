@@ -6,7 +6,7 @@ class SpiderQuoteService < ApplicationService
 
   def initialize(tag)
     @tag = tag
-    @base_uri = "http://quotes.toscrape.com"
+    @base_uri = ENV['QUOTE_TO_SCRAPE_URL']
   end
   
   def call

@@ -15,7 +15,12 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
   gem 'mongoid-rspec'
   gem 'faker'
+  gem 'dotenv-rails', groups: [:development, :test]
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
+  gem 'database_cleaner'
 end
 
 group :development do

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Quotes', type: :request do
-  let!(:user) { create :user }
+  let(:user) { create :user }
   let(:headers) { authenticated_header(user) }
 
   context 'when the user is logged in' do
@@ -9,9 +9,8 @@ RSpec.describe 'Quotes', type: :request do
       context 'when the record exists' do
         it "returns status code 200" do
           tag = "inspirational"
-          
           get "/quotes/#{tag}", headers: headers
-          
+
           expect(response).to have_http_status(:success)
         end
       end

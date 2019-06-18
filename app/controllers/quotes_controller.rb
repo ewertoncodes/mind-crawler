@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
     @quotes = SpiderQuoteService.call(params[:tag])
 
     if @quotes.empty?
-      render json: {"quotes not found": :quotes_not_found }, status: :not_found
+      render json: {"message": :quotes_not_found }, status: :not_found
     else
       @quotes
     end  
