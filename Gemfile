@@ -7,6 +7,8 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'mongoid', '~> 6.1.0'
 gem 'jbuilder'
+gem 'knock'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'

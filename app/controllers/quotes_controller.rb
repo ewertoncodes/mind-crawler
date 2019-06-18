@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
-  before_action :set_quote, only: [:show, :update, :destroy]
-  
+  before_action :authenticate_user
+    
   def index
     @quotes = SpiderQuoteService.call(params[:tag])
 

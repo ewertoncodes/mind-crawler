@@ -20,7 +20,7 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 # [...]
 # configure shoulda matchers to use rspec as the test framework and full matcher libraries for rails
 require 'mongoid-rspec'
@@ -28,6 +28,8 @@ require 'mongoid-rspec'
 RSpec.configure do |config|
   config.include Mongoid::Matchers, type: :model
   config.include FactoryBot::Syntax::Methods
+  config.include RequestSpecHelper, type: :request
+
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
