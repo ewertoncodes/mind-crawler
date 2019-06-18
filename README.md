@@ -43,6 +43,11 @@ Inicie o serviço do **MongoDB** rodando:
 ```bash
 sudo service mongod start
 ```
+Rode os testes:
+
+```bash
+rspec spec
+```
 
  Levante sua aplicação com o comando:
 
