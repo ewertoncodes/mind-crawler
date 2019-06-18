@@ -4,8 +4,8 @@ Uma simples api escrita em Rails para extrair citações do site Quotes to Scrap
 
 ## Como funciona
 
- O usuário deve se autenticar para usar sistema. Após colocar a tag das citações que procura o script irá buscar no site [quotes to scrape](http://quotes.toscrape.com/).
- Se a tag existir a aplicação realiza a extração dos dados por todas as páginas com aquela tag. Caso a tag não existe a aplicação irá retornar uma  mensagem avisando que a tag não existe.
+ O usuário deve se autenticar para usar o sistema. 
+ Após colocar a tag das citações que procura, o script irá buscar no site [quotes to scrape](http://quotes.toscrape.com/) os dados. Se a tag existir a aplicação realiza a extração dos dados por todas as páginas com aquela tag. Caso a tag não existe a aplicação irá retornar uma  mensagem avisando que a tag não existe.
 
 ---
 ## Instalação
@@ -118,7 +118,7 @@ Resposta:
 
 ---
 
-### Opção 2 - via linha de comando
+### Opção 2 - via Postman
 
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a7dbd3a1bb6729add572)
