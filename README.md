@@ -83,7 +83,7 @@ Resposta:
 ### Criando um usuário:
 
 ```bash
-echo '{ "user": { "email":"foo@foo.com", "name":"foo", "password":"123456"  } }' | http post http://localhost:3000/signup`
+echo '{ "user": { "email":"foo@foo.com", "name":"foo", "password":"123456"  } }' | http post http://localhost:3000/signup
 ```
 
 Resposta: 
@@ -106,8 +106,8 @@ Resposta:
 
 ```bash
 {
-"jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5Mzg1ODksInN1YiI6eyIkb2lkIjoiNWQwOGI1ZmQ2YjBmODgzNDJjYzNhM2FkIn19.4q5k$`
-`U1a-kl5H637jKmIcGkk3t6vA79T_IGO-yIACFg"
+"jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjA5Mzg1ODksInN1YiI6eyIkb2lkIjoiNWQwOGI1ZmQ2YjBmODgzNDJjYzNhM2FkIn19.4q5k$
+U1a-kl5H637jKmIcGkk3t6vA79T_IGO-yIACFg"
 }
 ```
 
